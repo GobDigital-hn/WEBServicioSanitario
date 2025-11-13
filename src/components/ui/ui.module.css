@@ -1,0 +1,252 @@
+/* Loading Spinner */
+.spinner {
+  border: 3px solid var(--arsa-gray-light);
+  border-top: 3px solid var(--arsa-blue-primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+.spinner-small {
+  width: 24px;
+  height: 24px;
+  border-width: 2px;
+}
+
+.spinner-medium {
+  width: 40px;
+  height: 40px;
+}
+
+.spinner-large {
+  width: 60px;
+  height: 60px;
+  border-width: 4px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Progress Bar */
+.progressBarContainer {
+  width: 100%;
+  margin: 0 0 var(--spacing-md) 0;
+}
+
+.progressLabel {
+  font-size: var(--font-size-sm);
+  color: var(--arsa-dark);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.progressBar {
+  width: 100%;
+  height: 8px;
+  background-color: var(--arsa-light);
+  border-radius: var(--border-radius-sm);
+  overflow: hidden;
+}
+
+.progressBarFill {
+  height: 100%;
+  background: var(--gradient-primary);
+  transition: width var(--transition-base);
+  border-radius: var(--border-radius-sm);
+  box-shadow: 0 2px 4px rgba(30, 64, 175, 0.2);
+}
+
+/* Modal */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: var(--spacing-md);
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modalContent {
+  background: white;
+  border-radius: var(--border-radius-md);
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-lg);
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-small {
+  max-width: 400px;
+  width: 100%;
+}
+
+.modal-medium {
+  max-width: 600px;
+  width: 100%;
+}
+
+.modal-large {
+  max-width: 900px;
+  width: 100%;
+}
+
+.modal-full {
+  max-width: 95vw;
+  width: 100%;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md);
+  border-bottom: 1px solid #dee2e6;
+}
+
+.modalTitle {
+  font-size: var(--font-size-xl);
+  color: var(--arsa-dark);
+  font-weight: 600;
+  margin: 0;
+}
+
+.modalClose {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #6c757d;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.modalClose:hover {
+  background-color: var(--arsa-light);
+  color: var(--arsa-dark);
+}
+
+.modalBody {
+  padding: var(--spacing-md);
+}
+
+/* Button */
+.button {
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--border-radius-sm);
+  border: none;
+  cursor: pointer;
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  transition: all var(--transition-base);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  justify-content: center;
+}
+
+.button-small {
+  padding: 0.5rem 1rem;
+  font-size: var(--font-size-sm);
+}
+
+.button-medium {
+  padding: 0.75rem 1.5rem;
+  font-size: var(--font-size-base);
+}
+
+.button-large {
+  padding: 1rem 2rem;
+  font-size: var(--font-size-lg);
+}
+
+.button-primary {
+  background: var(--gradient-primary);
+  color: white;
+  box-shadow: var(--shadow-sm);
+}
+
+.button-primary:hover:not(:disabled) {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-colored);
+}
+
+.button-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.button-secondary:hover:not(:disabled) {
+  background-color: #5a6268;
+  transform: translateY(-1px);
+}
+
+.button-success {
+  background-color: var(--arsa-success);
+  color: white;
+}
+
+.button-success:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+.button-danger {
+  background-color: var(--arsa-danger);
+  color: white;
+}
+
+.button-danger:hover:not(:disabled) {
+  background-color: #c82333;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.buttonFullWidth {
+  width: 100%;
+}
+
+.buttonIcon {
+  display: inline-flex;
+  align-items: center;
+}
+
