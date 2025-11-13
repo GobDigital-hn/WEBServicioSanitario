@@ -1,0 +1,99 @@
+:root {
+  /* ============================================
+     PALETA DE COLORES PROFESIONAL - ARSA
+     Diseño moderno con jerarquía visual clara
+     ============================================ */
+  
+  /* Colores Principales - Azul ARSA (Profesional y Confiable) */
+  --arsa-blue-primary: #1e40af;        /* Azul principal sólido - Headers, botones principales */
+  --arsa-blue-secondary: #3b82f6;       /* Azul secundario - Links, acentos */
+  --arsa-blue-light: #eff6ff;            /* Azul muy claro - Fondos sutiles, highlights */
+  --arsa-blue-hover: #1e3a8a;           /* Azul hover - Estados interactivos */
+  
+  /* Colores Neutros - Jerarquía de Grises */
+  --arsa-dark: #1f2937;                 /* Texto principal - Alto contraste */
+  --arsa-dark-secondary: #374151;        /* Texto secundario */
+  --arsa-gray: #6b7280;                 /* Texto terciario, placeholders */
+  --arsa-gray-light: #e5e7eb;            /* Bordes, separadores */
+  --arsa-light: #f9fafb;                 /* Fondos principales */
+  --arsa-white: #ffffff;                /* Fondos de cards, modales */
+  
+  /* Colores de Estado - Modernos y Accesibles */
+  --arsa-success: #10b981;               /* Verde éxito - Moderno y vibrante */
+  --arsa-success-light: #d1fae5;        /* Verde claro - Fondos de éxito */
+  --arsa-danger: #ef4444;                /* Rojo error - Moderno */
+  --arsa-danger-light: #fee2e2;          /* Rojo claro - Fondos de error */
+  --arsa-warning: #f59e0b;                /* Amarillo advertencia - Moderno */
+  --arsa-warning-light: #fef3c7;         /* Amarillo claro - Fondos de advertencia */
+  --arsa-info: #3b82f6;                  /* Azul información */
+  --arsa-info-light: #dbeafe;            /* Azul claro - Fondos de info */
+  
+  /* Colores de Interacción */
+  --arsa-primary: var(--arsa-blue-primary);  /* Mantener compatibilidad */
+  --arsa-blue: var(--arsa-blue-primary);     /* Mantener compatibilidad */
+  
+  /* Gradientes Modernos */
+  --gradient-primary: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  --gradient-subtle: linear-gradient(135deg, #eff6ff 0%, #ffffff 100%);
+  
+  /* Gradiente Navbar - Sutil de izquierda a derecha */
+  --gradient-navbar: linear-gradient(to right, #f9fafb 0%, #dff0fc 100%);
+  
+  /* Alternativa más sutil */
+  --gradient-navbar-subtle: linear-gradient(to right, #ffffff 0%, #dff0fc 100%);
+  
+  /* ============================================
+     ESPACIADO
+     ============================================ */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  
+  /* ============================================
+     TIPOGRAFÍA
+     ============================================ */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  
+  /* ============================================
+     BORDES Y RADIOS
+     ============================================ */
+  --border-radius-sm: 6px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-xl: 16px;
+  
+  /* ============================================
+     SOMBRAS - Profundidad y Elevación
+     ============================================ */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-colored: 0 10px 15px -3px rgba(30, 64, 175, 0.2);
+  
+  /* ============================================
+     TRANSICIONES
+     ============================================ */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
+  
+  /* ============================================
+     Z-INDEX
+     ============================================ */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+}

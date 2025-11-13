@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', 'Segoe UI', 'Source Sans Pro', Calibri, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--arsa-light);
+  color: var(--arsa-dark);
+}
+
+#root {
+  min-height: 100vh;
+}
+
