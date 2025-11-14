@@ -35,7 +35,7 @@ const MenuPrincipal = () => {
             <h1 className={styles.title}>Portal Ciudadano ARSA</h1>
           </div>
           <div className={styles.userSection}>
-            <span className={styles.userName}>Bienvenido, {usuario?.nombre}</span>
+            <span className={styles.userName}>Bienvenido(a)</span>
             <button onClick={logout} className={styles.logoutButton}>
               Cerrar Sesión
             </button>
