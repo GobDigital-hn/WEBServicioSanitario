@@ -363,7 +363,7 @@ const ModalSimulacion = ({ isOpen, onClose, tramiteId }) => {
         <ModalConfirmacionEnvio
           isOpen={mostrarConfirmacion}
           onClose={handleCerrarConfirmacion}
-          emailInicial={usuario?.email}
+          emailInicial=""
         />
       )}
     </>
