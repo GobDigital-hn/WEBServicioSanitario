@@ -87,6 +87,15 @@ export default async function handler(req, res) {
     console.log('[send-certificate] Email desde:', fromEmail);
     console.log('[send-certificate] Email hacia:', email);
     
+    // Validar que las variables críticas estén configuradas
+    if (!process.env.RESEND_API_KEY) {
+      console.error('[send-certificate] ERROR: RESEND_API_KEY no está configurada');
+      return res.status(500).json({
+        error: 'Configuración faltante',
+        details: 'RESEND_API_KEY no está configurada. Configúrala en Vercel Dashboard → Settings → Environment Variables.'
+      });
+    }
+    
     // Advertencia si no está usando el dominio verificado
     if (fromEmail === 'onboarding@resend.dev') {
       console.warn('[send-certificate] ⚠️ ADVERTENCIA: No se está usando el dominio verificado.');
