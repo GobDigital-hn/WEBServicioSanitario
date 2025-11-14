@@ -40,7 +40,7 @@ const Login = () => {
     setTimeout(() => {
       const userData = {
         nombre: 'Ariel Lutz',
-        email: 'ariellutz10@gmail.com',
+        email: 'pruebagobiernodigita@gmail.com',
         usuario: formData.usuario,
         isAuthenticated: true,
       };
